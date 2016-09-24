@@ -60,8 +60,8 @@ public class Listeners {
                 if(Calc.getMetod()!=null) Calc.setArg1(Calc.getResult());
                 window.lable.setText(Float.toString(Calc.getArg1()));
 
-                System.out.println("Arg1 = " + Calc.getArg1());
-                System.out.println("Arg2 = " + Calc.getArg2());
+//                System.out.println("Arg1 = " + Calc.getArg1());
+//                System.out.println("Arg2 = " + Calc.getArg2());
                 Calc.setMetodFlag(true);
 
                 break;

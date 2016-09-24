@@ -70,7 +70,7 @@ public class Window {
 
         JFrame frame = new JFrame("CALC1.0");
 
-        frame.setPreferredSize(new Dimension(260, 400));
+        frame.setPreferredSize(new Dimension(260, 320));
         frame.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         frame.add(panel);
         frame.setResizable(false);
