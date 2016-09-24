@@ -6,9 +6,7 @@ import java.awt.*;
 
 
 public class Window {
-
-
-    public JLabel lable;
+    public  JLabel lable;
 
     public Window() {
 

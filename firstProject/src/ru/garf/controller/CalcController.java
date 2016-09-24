@@ -40,7 +40,6 @@ public class CalcController {
 
                 break;
 
-
         }
 
         return result;

@@ -2,17 +2,17 @@ package ru.garf.model;
 
 
 import ru.garf.controller.CalcController;
-import ru.garf.view.swing.Window;
 
 public class Calc {
 
     private static float arg1=0;
-    private static boolean arg1Flag;
     private static float arg2=0;
     private static Metod metod;
+
+    private static boolean arg1Flag;
     private static boolean metodFlag;
-    public static int dotValue=0;
-    public static boolean invert;
+    private static int dotValue=0;
+    private static boolean invert;
 
 
     public static float getArg1() {
@@ -47,9 +47,6 @@ public class Calc {
         Calc.metodFlag = metodFlag;
     }
 
-    public static float getResult(){
-        return CalcController.doCalc(arg1,arg2,metod);
-    }
 
     public static int getDotValue() {
         return dotValue;
@@ -75,10 +72,9 @@ public class Calc {
         Calc.invert = invert;
     }
 
-    public Calc(){
-        new Window();
-
-
+    public static float getResult(){
+        return CalcController.doCalc(arg1,arg2,metod);
     }
+
 
 }
