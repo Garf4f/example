@@ -21,7 +21,7 @@ public class Window {
     }
 
 
-    static {
+    public static void render(){
 
         lable = new JLabel("0.0");
 

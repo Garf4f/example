@@ -22,11 +22,11 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
-        <module name="calc1.0" />
+        <module name="maven" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="calc1.0" target="1.8" />
+      <module name="maven" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
