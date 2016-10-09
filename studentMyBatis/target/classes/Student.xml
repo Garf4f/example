@@ -5,15 +5,6 @@
 
 <mapper namespace = "Student">
 
-    <!--<insert id = "insert" parameterType = "Student" useGeneratedKeys="true" keyProperty="id" >-->
-        <!--INSERT INTO STUDENT (NAME, BRANCH, PERCENTAGE, PHONE, EMAIL ) VALUES (#{name}, #{branch}, #{percentage}, #{phone}, #{email});-->
-
-        <!--&lt;!&ndash;<selectKey keyProperty = "id" resultType = "int" order = "AFTER">&ndash;&gt;-->
-            <!--&lt;!&ndash;select last_insert_id() as id&ndash;&gt;-->
-        <!--&lt;!&ndash;</selectKey>&ndash;&gt;-->
-
-    <!--</insert>-->
-
     <resultMap id = "result" type = "Student">
         <result property = "id" column = "ID"/>
         <result property = "name" column = "NAME"/>

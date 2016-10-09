@@ -22,7 +22,7 @@ public class MyServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        response.setContentType("text/html");
+        response.setContentType("text/html;charset=utf-8");
         String varTextA = "Hello World!";
         request.setAttribute("textA", varTextA);
         String varTextB = "It JSP.";
