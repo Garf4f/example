@@ -23,12 +23,17 @@ public class MyServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=utf-8");
-        String varTextA = "Hello World!";
-        request.setAttribute("textA", varTextA);
-        String varTextB = "It JSP.";
-        request.setAttribute("textB", varTextB);
+        PrintWriter pw = response.getWriter();
+        int x = 10;
+        pw.println("Случайкое число - "+x);
 
-        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
-        dispatcher.forward(request, response);
+
+//        String varTextA = "Hello World!";
+//        request.setAttribute("textA", varTextA);
+//        String varTextB = "It JSP.";
+//        request.setAttribute("textB", varTextB);
+//
+//        RequestDispatcher dispatcher = request.getRequestDispatcher("/index.jsp");
+//        dispatcher.forward(request, response);
     }
 }

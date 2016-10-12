@@ -6,7 +6,7 @@
 <body>
 
 
-${textA}
+
 <br>
 текст
 </body>

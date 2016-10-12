@@ -22,10 +22,10 @@ public class mybatisInsert {
 //        Student student1 = new Student("Mohammad","It", 80, 984803322, "Mohammad@gmail.com" );
 //        session.insert("Student.insert", student1);
 
-        Student std = session.selectOne("Student.getById",1);
-
-        std.setName("GARF");
-        session.update("Student.update", std);
+//        Student std = session.selectOne("Student.getById",1);
+//
+//        std.setName("GARF");
+//        session.update("Student.update", std);
 
 
         List<Student> student = session.selectList("Student.getAll");
