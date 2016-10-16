@@ -1,0 +1,16 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+
+    <!-- Stock business object -->
+    <bean id="contactBo" class="ru.garf.contact.bo.impl.ContactBoImpl" >
+        <property name="contactDao" ref="contactDao" />
+    </bean>
+
+    <!-- Stock Data Access Object -->
+    <bean id="contactDao" class="ru.garf.contact.dao.impl.ContactDaoImpl" >
+        <property name="sessionFactory" ref="sessionFactory"></property>
+    </bean>
+
+</beans>
