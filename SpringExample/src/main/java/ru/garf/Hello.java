@@ -16,8 +16,9 @@ public class Hello {
 
     public static void main(String []args){
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext(new String[] {"config.xml"});//показываем Spring где лежит файл конфигурации
-        Hello h = (Hello) ac.getBean("hello");//указываем id нашего bean-а
+        Hello h = (Hello) ac.getBean("hello");
         h.sayHi();
+        ac.close();
     }
 
 }
