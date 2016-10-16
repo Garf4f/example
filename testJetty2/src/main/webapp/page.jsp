@@ -7,6 +7,8 @@
 </head>
 <body>
     <h1>
+
+    <%=request.getAttribute("text")%>
     <%=request.getAttribute("text")%>
     </h1>
 </body>
